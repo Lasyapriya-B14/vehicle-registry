@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚗 Vehicle Registration Portal
 
-## Getting Started
+A full-stack Vehicle Registration Portal built using **Next.js**, **FastAPI**, and **Oracle Express Database**. This system provides secure **role-based access** for both users and administrators.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔧 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🔐 Role-based authentication (User/Admin)
+- 📝 Users can register their vehicles by submitting relevant details
+- ✅ Admins can view, approve, or decline vehicle registrations
+- 💬 Clean and responsive UI with validation and feedback
+- 🗃️ Backend powered by Oracle XE (via Docker) for efficient data management
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Frontend:** Next.js
+- **Authentication:** NextAuth with Google OAuth
+- **Backend:** FastAPI
+- **Database:** Oracle Express Edition (Oracle XE)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Setup Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Due to the complexity of the stack, full setup instructions are **available on request**.
 
-## Deploy on Vercel
+Key setup requirements:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🐳 **Oracle XE must be run via Docker** (due to high local space usage)
+- 🔐 Requires setting up **NextAuth credentials** and **Google OAuth** via Google Cloud Console
+- 🔌 Environment variables and integration steps for frontend/backend/database must be configured carefully
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📬 Contact
+
+For setup instructions, issues, or contributions, feel free to open an issue or contact me at `lasyabharadwaj541@gmail.com`.
